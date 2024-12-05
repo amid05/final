@@ -1,0 +1,66 @@
+<html>
+
+	<head>
+		<title>Final project review</title>
+		<style>
+			body { 
+				background-color: #cb4a31;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBn1ZNUs4m9sZjXG4yj3klc76i5bUlsZLdCw&s">
+	
+		<a href="detail.html">Click here to go to detail page</a>
+	
+		<button id="add-heading">Click me to add a heading</button>
+	
+		<div id="container">
+		</div>
+	
+		<script>
+			var my_name = "A-A-RON";
+			var my_age = 25;
+			var is_full = false;
+			var anime = ["One Piece", "Toriko", "Dragonball Z"];
+			console.log(anime[3]);
+			var one_piece = {
+				producer: "Toei",
+				director: "Somebody",
+				actors: [
+					{ 
+						name: "Lady",
+						anime_bananas: 5,
+						is_hirable: false
+					}, "Man"
+				] 
+			};
+			
+			console.log(one_piece.director);
+			
+			function sail_thousand_sunny(sailed) {
+				console.log("The One Piece is real!");
+				console.log(lit);
+			}
+			
+			var btn = document.getElementById("add-heading");
+			btn.addEventListener('click', createHeading);
+		
+			function createHeading() {
+				console.log('Getting there!');
+				
+				var new_heading = document.createElement("h1");
+				// ^ <h1></h1>
+				
+				new_heading.innerText = "This is new heading";
+				// ^ <h1>This is new heading</h1>
+				
+				var container = document.getElementById("container");
+				container.appendChild(new_heading);
+			}
+		
+		</script>
+	
+	</body>
+
+</html>
